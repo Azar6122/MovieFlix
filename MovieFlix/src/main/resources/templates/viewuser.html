@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User view page</title>
+</head>
+<body>
+<h2>ALL USERS </h2>
+<table border="1">
+<thead>
+<tr>
+<td>Name</td>
+<td>Email</td>
+<td>Phone </td>
+<td>Gender</td>
+<td>Address</td>
+</tr>
+</thead>
+<tbody>
+<tr th:each="user : ${user}">
+<td th:text="${user.name}"></td>
+<td th:text="${user.email}"></td>
+<td th:text="${user.phone}"></td>
+<td th:text="${user.gender}"></td>
+<td th:text="${user.address}"></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

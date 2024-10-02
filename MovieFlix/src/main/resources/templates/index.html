@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Index Page</title>
+
+<style type="text/css">
+/* Reset some default styles */
+body, h1, p {
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+     background-color: rgba(52, 152, 219, 0.8);
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; 	
+}
+
+header {
+    background-color: #0805b5;
+    color: #5de3d8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0	;
+}
+
+main {
+    margin-top: 20px;
+}
+
+section.button {
+    text-align: center;
+}
+
+section.button form {
+    display: inline-block;
+}
+
+section.button input[type="submit"] {
+    background-color: #e3ce10;
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+section.button input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2px;
+    padding: 1px 0 0 1px ;
+    background-color: #948f8f;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    section.button input[type="submit"] {
+        font-size: 20px;
+    }
+}
+</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>WELCOME TO MOVIEFLIX</h1>
+		</div>
+	</header>
+	<br><br>
+	<main>
+		<section class="button">
+			<form action="map-register">
+				<input type="submit" value="REGISTER">
+			</form>
+		
+		<br> <br>
+		<br> <br>
+			<form action="map-login">
+				<input type="submit" value="LOGIN">
+			</form>
+		</section>
+	</main>
+	<br><br><br><br><br><br>
+	<footer>
+		<div class="container1">
+			<p>&copy; 2024 Your Company. All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>

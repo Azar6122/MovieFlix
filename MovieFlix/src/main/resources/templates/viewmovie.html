@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Movies Page</title>
+</head>
+<body>
+<h3>ALL MOVIES</h3>
+<br><br>
+<table border="1">
+<thead>
+<tr>
+	<th>ID</th>
+	<th>Name</th>
+	<th>Link</th>
+	<th>Genre</th>
+	<th>Cast</th>
+	<th>Director</th>
+</tr>
+</thead>
+<tbody>
+	<tr th:each="movie : ${movie}">
+	<td th:text="${movie.Id}"></td>
+	<td th:text="${movie.movieName}"></td>
+	<td th:utext="${movie.movieLink}"></td>
+	<td th:text="${movie.movieGenre}"></td>
+	<td th:text="${movie.movieCast}"></td>
+	<td th:text="${movie.movieDirector}"></td>
+</tr>
+</tbody>
+</table>
+
+
+</body>
+</html>
